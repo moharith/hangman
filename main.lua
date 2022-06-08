@@ -4,8 +4,8 @@ LETTER_Z = 122
 WINDOW_HEIGHT = 768
 WINDOW_WIDTH = 1024
 
-local fontGroot = love.graphics.newFont(30)
-local fontZeerGroot = love.graphics.newFont(50)
+local fontGroot = love.graphics.newFont("alagard.ttf", 30)
+local fontZeerGroot = love.graphics.newFont("alagard.ttf", 50)
 
 
 local ingedrukteToets = key
@@ -42,7 +42,8 @@ end
 function love.load()
     --
     love.window.setMode(WINDOW_WIDTH, WINDOW_HEIGHT, {
-        resizable = true
+        resizable = true,
+        fullscreen = false
     })
     love.window.setTitle('Galgje')
     math.randomseed(os.time())
@@ -173,7 +174,7 @@ function checkscore()
 
         if levens <= 0 then
             love.graphics.clear()
-            love.graphics.print("Druk op enter om een nieuw potje te spelen", WINDOW_WIDTH / 2 - 200 , WINDOW_HEIGHT /2)
+            love.graphics.print("Druk op enter om een nieuw potje te spelen", WINDOW_WIDTH / 2 - 300 , WINDOW_HEIGHT /2)
             newgame = true
         end
 
