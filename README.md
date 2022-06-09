@@ -12,6 +12,7 @@ A simple hangman Project
 - Fix: Letters displayed Correctly
 - Streak Counter
 - Life ( 10x per word )
+- Medieval Font
 
 # todo
 
