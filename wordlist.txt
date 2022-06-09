@@ -162,7 +162,7 @@ alcoholvrij
 alert
 alfabetisch
 alfanumeriek
-algebraïsch
+algebraisch
 algeheel
 algemeen
 alledaags
@@ -183,7 +183,7 @@ alpien
 alpijns
 alpine
 alternatief
-altruïstisch
+altruistisch
 aluminium
 amateuristisch
 ambachtelijk
@@ -271,7 +271,7 @@ arbeidsintensief
 arbeidsongeschikt
 arbeidzaam
 arbitrair
-archaïsch
+archaisch
 archeologisch
 architectonisch
 architecturaal
@@ -394,7 +394,7 @@ bedroevend
 beducht
 beduidend
 beduusd
-beëdigd
+beedigd
 beeldend
 beendroog
 beenhard
@@ -432,7 +432,7 @@ beiderzijds
 beige
 beigeachtig
 beijzeld
-beïnvloedbaar
+beinvloedbaar
 bejaard
 bekaaid
 bekaf
@@ -710,7 +710,7 @@ burgerrechtelijk
 burlesk
 byzantijns
 cabaretesk
-cafeïnevrij
+cafeinevrij
 caleidoscopisch
 caloriearm
 calorisch
@@ -773,7 +773,7 @@ chronisch
 chronologisch
 cilindrisch
 circulair
-cisterciënzer
+cistercienzer
 cito
 civiel
 civielrechtelijk
@@ -829,7 +829,7 @@ conform
 confuus
 congruent
 conisch
-consciëntieus
+conscientieus
 consequent
 conservatief
 conservatoir
@@ -859,8 +859,8 @@ controversieel
 conventioneel
 convex
 cool
-coöperatief
-coördinerend
+cooperatief
+coordinerend
 copernicaans
 copieus
 cordiaal
@@ -942,7 +942,7 @@ deeltijds
 deemoedig
 defect
 defensief
-deficiënt
+deficient
 deficitair
 definitief
 deftig
@@ -1227,11 +1227,11 @@ efemeer
 effectief
 effectvol
 effen
-efficiënt
+efficient
 egaal
 egalitair
 egocentrisch
-egoïstisch
+egoistisch
 eigeel
 eigen
 eigenaardig
@@ -1415,7 +1415,7 @@ farmaceutisch
 farmacologisch
 fascinerend
 fascistisch
-fascistoïde
+fascistoide
 fataal
 fatalistisch
 fatsoenlijk
@@ -1423,7 +1423,7 @@ faustiaans
 favoriet
 fecaal
 federaal
-feeëriek
+feeeriek
 feestelijk
 feilloos
 feitelijk
@@ -1476,7 +1476,7 @@ flexibel
 flink
 floeren
 florissant
-fluïde
+fluide
 fluks
 fluorescent
 fluorescerend
@@ -1621,9 +1621,9 @@ geconstateerd
 geconstrueerd
 gecontinueerd
 gecontroleerd
-gecoördineerd
+gecoordineerd
 gecorrigeerd
-gecreëerd
+gecreeerd
 gedaan
 gedachteloos
 gedateerd
@@ -1637,7 +1637,7 @@ gedeisd
 gedekt
 gedemotiveerd
 gedesillusioneerd
-gedesoriënteerd
+gedesorienteerd
 gedetailleerd
 gedetineerd
 gedifferentieerd
@@ -1662,20 +1662,20 @@ geduldig
 gedurfd
 gedwee
 gedwongen
-geëerd
-geëigend
+geeerd
+geeigend
 geel
 geelachtig
 geelgroen
-geëmancipeerd
-geëmotioneerd
-geëngageerd
+geemancipeerd
+geemotioneerd
+geengageerd
 geestelijk
 geestesziek
 geestig
 geestverruimend
 geestverwant
-geëtst
+geetst
 gefinancierd
 gefingeerd
 gefixeerd
@@ -1719,14 +1719,14 @@ gehuisvest
 gehuwd
 geijkt
 geil
-geïllustreerd
-geïmproviseerd
+geillustreerd
+geimproviseerd
 geinig
-geïnspireerd
-geïntegreerd
-geïnteresseerd
-geïrriteerd
-geïsoleerd
+geinspireerd
+geintegreerd
+geinteresseerd
+geirriteerd
+geisoleerd
 geitenwollen
 gejaagd
 gek
@@ -1981,7 +1981,7 @@ getailleerd
 getalenteerd
 getalsmatig
 getand
-getatoeëerd
+getatoeeerd
 geteerd
 geteisterd
 getekend
@@ -2001,9 +2001,9 @@ getrouwd
 getuigd
 getuit
 getypt
-geüniformeerd
-geüpdatet
-geürbaniseerd
+geuniformeerd
+geupdatet
+geurbaniseerd
 gevaarlijk
 gevangen
 gevarieerd
@@ -2115,7 +2115,7 @@ goedbedoeld
 goedbetaald
 goedgebekt
 goedgehumeurd
-goedgeïnformeerd
+goedgeinformeerd
 goedgekeurd
 goedgekleed
 goedgekozen
@@ -2306,8 +2306,8 @@ herhaaldelijk
 herkenbaar
 hermeneutisch
 hermetisch
-heroïek
-heroïsch
+heroiek
+heroisch
 hersenloos
 herverkiesbaar
 hervormd
@@ -2319,7 +2319,7 @@ heuristisch
 heus
 hevig
 hexadecimaal
-hiërarchisch
+hierarchisch
 hiernavolgend
 high
 highbrow
@@ -2327,7 +2327,7 @@ hightech
 hijgend
 hilarisch
 hinderlijk
-hindoeïstisch
+hindoeistisch
 hindoes
 hip
 hippisch
@@ -2363,7 +2363,7 @@ hoofs
 hoog
 hoogbegaafd
 hoogedel
-hooggeëerd
+hooggeeerd
 hooggegrepen
 hooggeleerd
 hooggelegen
@@ -2423,7 +2423,7 @@ huwelijks
 hybride
 hydraulisch
 hydrofiel
-hygiënisch
+hygienisch
 hygroscopisch
 hyper
 hyperactief
@@ -2437,8 +2437,8 @@ hysterisch
 iconisch
 ideaal
 idealistisch
-ideëel
-ideeëloos
+ideeel
+ideeeloos
 identiek
 identificeerbaar
 ideologisch
@@ -2501,7 +2501,7 @@ incompetent
 incompleet
 inconsequent
 inconsistent
-inconveniënt
+inconvenient
 incorrect
 incourant
 incrementeel
@@ -2520,7 +2520,7 @@ indrukwekkend
 inductief
 industrieel
 ineffectief
-inefficiënt
+inefficient
 inert
 infaam
 infantiel
@@ -2612,7 +2612,7 @@ intriest
 intrigerend
 intrinsiek
 introvert
-intuïtief
+intuitief
 invalide
 invasief
 inventief
@@ -2625,7 +2625,7 @@ ionisch
 ironisch
 irrationeel
 irrealistisch
-irreëel
+irreeel
 irrelevant
 irreversibel
 irritant
@@ -2646,7 +2646,7 @@ jarenlang
 jarig
 jazzy
 jeugdig
-jezuïtisch
+jezuitisch
 jihadistisch
 jofel
 jong
@@ -2672,7 +2672,7 @@ kaal
 kachel
 kadastraal
 kaduuk
-kafkaësk
+kafkaesk
 kafkaiaans
 kakelbont
 kaki
@@ -2828,7 +2828,7 @@ kostenbesparend
 kostenbewust
 kostendekkend
 kosteneffectief
-kostenefficiënt
+kostenefficient
 kotsbeu
 koud
 kouwelijk
@@ -3003,11 +3003,11 @@ limbisch
 limitatief
 linden
 lineair
-linguïstisch
+linguistisch
 link
 linker
 links
-linksgeoriënteerd
+linksgeorienteerd
 linnen
 liquide
 literair
@@ -3103,7 +3103,7 @@ manoeuvreerbaar
 mans
 manshoog
 manueel
-maoïstisch
+maoistisch
 marginaal
 marien
 marineblauw
@@ -3275,7 +3275,7 @@ mondeling
 mondiaal
 mondig
 monetair
-mongoloïde
+mongoloide
 mono
 monochroom
 monodisciplinair
@@ -3335,7 +3335,7 @@ nadelig
 naderend
 nadrukkelijk
 nagelnieuw
-naïef
+naief
 nakend
 nameloos
 naoorlogs
@@ -3370,7 +3370,7 @@ neerwaarts
 nefast
 negatief
 negenjarig
-negroïde
+negroide
 neoclassicistisch
 neogotisch
 neoklassiek
@@ -3586,9 +3586,9 @@ ongecensureerd
 ongedaan
 ongeduldig
 ongedurig
-ongeëvenaard
+ongeevenaard
 ongegeneerd
-ongeïnteresseerd
+ongeinteresseerd
 ongekend
 ongelijk
 ongelimiteerd
@@ -3622,7 +3622,7 @@ onheilspellend
 onherroepelijk
 onheus
 onhoudbaar
-onhygiënisch
+onhygienisch
 oninteressant
 onjuist
 onkies
@@ -3803,7 +3803,7 @@ opgewekt
 opgewonden
 opgezet
 opgezwollen
-opiniërend
+opinierend
 opkomend
 oplopend
 oplossingsgericht
@@ -3839,8 +3839,8 @@ organisatiebreed
 organisatorisch
 organisch
 orgastisch
-oriëntaal
-oriëntaals
+orientaal
+orientaals
 origineel
 orkestraal
 ornamenteel
@@ -3916,7 +3916,7 @@ paradoxaal
 parallel
 paralympisch
 paramedisch
-paranoïde
+paranoide
 parastataal
 parelmoeren
 parenteel
@@ -3943,7 +3943,7 @@ pathetisch
 pathisch
 pathogeen
 pathologisch
-patiëntgebonden
+patientgebonden
 patriarchaal
 patriottisch
 patriottistisch
@@ -3990,7 +3990,7 @@ pienter
 piepend
 piepklein
 piepschuimen
-piëteitsvol
+pieteitsvol
 pietepeuterig
 pietluttig
 pijlsnel
@@ -4033,7 +4033,7 @@ plotseling
 pluchen
 pluralistisch
 pluriform
-poëtisch
+poetisch
 polair
 polemisch
 poliklinisch
@@ -4089,7 +4089,7 @@ precies
 precieus
 precolumbiaans
 predicatief
-preëminent
+preeminent
 prefab
 preferabel
 preferent
@@ -4166,7 +4166,7 @@ provisioneel
 provisoir
 provisorisch
 prowesters
-prozaïsch
+prozaisch
 prudent
 prudentieel
 pseudofilosofisch
@@ -4266,7 +4266,7 @@ redeloos
 redengevend
 redundant
 ree
-reëel
+reeel
 referentieel
 reflectief
 reflexief
@@ -4378,7 +4378,7 @@ rozerood
 rozig
 rubber
 rubberen
-rücksichtslos
+rucksichtslos
 rudimentair
 ruig
 ruim
@@ -4406,7 +4406,7 @@ saffisch
 saffraangeel
 saillant
 salesianer
-salonfähig
+salonfahig
 salpeterzuur
 samengesteld
 samenhangend
@@ -4573,7 +4573,7 @@ smalend
 small
 smerig
 smeu
-smeuïg
+smeuig
 smoor
 snaaks
 snedig
@@ -4696,7 +4696,7 @@ stoer
 stoffelijk
 stoffen
 stoffig
-stoïcijns
+stoicijns
 stokstijf
 stom
 stomp
@@ -4755,7 +4755,7 @@ succesvol
 succulent
 suf
 suggestief
-suïcidaal
+suicidaal
 suikervrij
 summier
 super
@@ -4779,7 +4779,7 @@ supplementair
 supranationaal
 suprême
 surrealistisch
-surreëel
+surreeel
 syllabisch
 symbiotisch
 symbolisch
@@ -4827,7 +4827,7 @@ teder
 teer
 tegendraads
 tegengesteld
-tegenintuïtief
+tegenintuitief
 tegenovergesteld
 tegenoverliggend
 tegensprekelijk
@@ -5073,8 +5073,8 @@ vaalblauw
 vaalrood
 vaardig
 vacant
-vacuüm
-vacuümverpakt
+vacuum
+vacuumverpakt
 vaderlands
 vadsig
 vakkundig
@@ -5530,7 +5530,7 @@ wederkerend
 wederkerig
 wederrechtelijk
 wederzijds
-weeïg
+weeig
 week
 weeks
 weelderig
@@ -5732,7 +5732,7 @@ zonderling
 zonneklaar
 zonnig
 zonovergoten
-zoölogisch
+zoologisch
 zorgdragend
 zorgelijk
 zorgeloos
