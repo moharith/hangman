@@ -1,6 +1,4 @@
 -- 
-
-
 gFont = { 
     ['fontGroot'] = love.graphics.newFont("alagard.ttf", 30),
     ['fontZeerGroot'] = love.graphics.newFont("alagard.ttf", 50)
