@@ -163,7 +163,7 @@ end
 function love.draw()
     love.graphics.setFont(gFont['fontGroot'])
     checkscore()  
-    woordstring() -
+    woordstring() 
     PrintAlfabet() 
     tekengalg()
 -- 
