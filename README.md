@@ -2,19 +2,27 @@
 
 A simple hangman Project
 
-
--- Dutch Words from a txt file
--- Streak Counter
--- Life ( 10x per word )
+# finished
+- Load Dutch Words from a text file into a table
+- Randomized Word selction
+- Display wrong / correct letters
+- Dusplay Word Parts
+- Fix: Unable to select same letters multiple times
+- Fix: Don't do anyhting when letter != a till z
+- Fix: Letters displayed Correctly
+- Streak Counter
+- Life ( 10x per word )
 
 # todo
 
+- Display Number of letterblocks ( maybe with numbers beneath )
 - Main menu
 - Title Screen
 - Audio
 - Music
 - Words displayed when Game-Over
 - Gallows + Skeleton animation
+
 
 
 ## Maybe later
