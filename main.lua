@@ -1,29 +1,31 @@
+-- constants
 LETTER_A = 97
 LETTER_Z = 122
-
 WINDOW_HEIGHT = 768
 WINDOW_WIDTH = 1024
 
-local fontGroot = love.graphics.newFont("alagard.ttf", 30)
-local fontZeerGroot = love.graphics.newFont("alagard.ttf", 50)
+require("Libraries/Init")
 
 
 local ingedrukteToets = key
-
-local streak = 0
 
 local tabel = {}
 local alfabet = {}
 local woordentabel = {}
 
 local newgame = false
+local streak = 0
+
+
+gSound['backgroundMusic']:setLooping( true )
+gSound['backgroundMusic']:play()
 
 
 function init()
     tabel = {}
     alfabet = {}
-    local levens = 10
-    local newgame = false
+
+    newgame = false
     kieswoord()
     woordlengte = string.len(woord)
 
@@ -53,8 +55,6 @@ function love.load()
     end
     init()
 
-   
-
 end
 
 
@@ -67,11 +67,23 @@ function love.keypressed(key, scancode)
 
     if newgame then
         if key == 'return' then
+            streak = 0
+            init()
+        end
+    end
+
+    if wongame then
+        if key == 'return' then
+            wongame = false
+            streak = streak + 1
             init()
         end
     end
 
     if string.byte(ingedrukteToets) >= LETTER_A and string.byte(ingedrukteToets) <= LETTER_Z and ingedrukteToets ~= 'return'  then
+
+        gSound['Blip']:stop()
+        gSound['Blip']:play()
 
         for i = 1, woordlengte do 
             if string.byte(ingedrukteToets) ~= tabel[i].lettercode  then
@@ -101,7 +113,7 @@ function love.keypressed(key, scancode)
 
 end
 
-function wow()
+function PrintAlfabet()
     local x = 0
     local n = 0
 
@@ -117,7 +129,7 @@ function wow()
         if alfabet[n].status == "fout" then
             love.graphics.setColor(1,0,0,1)
         end        
-        love.graphics.printf(string.char(i), x - 40, WINDOW_HEIGHT - 150, 200, "center")
+        love.graphics.printf(string.char(i), x - 40, WINDOW_HEIGHT - 100, 200, "center")
         x = x + 35       
 
     end
@@ -127,27 +139,33 @@ end
 
 
 function love.draw()
-    love.graphics.setFont(fontGroot)
-    
--- love.graphics.print(woord, 100, 100)
+    love.graphics.setFont(gFont['fontGroot'])
+    checkscore()  
 
-    woordstring()
-    wow()
-    checkscore()
+    woordstring() -- woord op beeld
+    PrintAlfabet() -- alfebet op beeld
+-- 
 end
 
 -- laat woord op beeld ontstaan
 function woordstring()
     for i = 1, woordlengte do   
+        love.graphics.setFont(gFont['fontGroot'])
+        love.graphics.printf((i), 0 + (45 * i), 450, 200, "center") 
+        love.graphics.setFont(gFont['fontZeerGroot'])
+
+ 
         if tabel[i].show == "ja" then
             love.graphics.setColor(1,1,1,1)
-            love.graphics.setFont(fontZeerGroot)
-            love.graphics.print((string.char(tabel[i].lettercode)), 200 + (45 * i), 400)
-        else 
-            love.graphics.setColor(0,0,0,0)
+
+            love.graphics.printf((string.char(tabel[i].lettercode)), 0 + (45 * i), 400, 200, "center")
+        else
+            love.graphics.printf(("_"), 0 + (45 * i), 400, 200, "center")
+        
+            -- love.graphics.setColor(0,0,0,0)
         end
     end 
-    love.graphics.setFont(fontGroot)
+    love.graphics.setFont(gFont['fontGroot'])
    love.graphics.setColor(1,1,1,1)
 end
 
@@ -155,6 +173,7 @@ end
 function checkscore()
     local max = woordlengte
     local levens = 10
+
         for k = 1, #alfabet do
             if alfabet[k].letter ~= ingedrukteToets and alfabet[k].status == "fout"  then
                 levens = levens - 1
@@ -164,22 +183,40 @@ function checkscore()
         for k = 1, woordlengte do
             if tabel[k].show == "ja" then 
                 max = max - 1
-                if max == 0 then 
-                    streak = streak + 1
-                    levens = levens + 1
-                    init()
-                end
             end
         end
 
+        if max == 0  then
+
+            levens = levens + 1
+            
+            love.graphics.print("Druk op enter om een nieuw potje te spelen", WINDOW_WIDTH / 2 - 300 , WINDOW_HEIGHT /3)
+           -- max = max -1
+            wongame = true
+
+
+        end
+
         if levens <= 0 then
-            love.graphics.clear()
-            love.graphics.print("Druk op enter om een nieuw potje te spelen", WINDOW_WIDTH / 2 - 300 , WINDOW_HEIGHT /2)
+            --love.graphics.clear()
+
+            love.graphics.print("Druk op enter om een nieuw potje te spelen", WINDOW_WIDTH / 2 - 300 , WINDOW_HEIGHT /4)
+            love.graphics.print("Het woord was ... ", WINDOW_WIDTH / 2 - 300 , WINDOW_HEIGHT /3)
+            for i = 1, woordlengte do   
+                love.graphics.setFont(gFont['fontZeerGroot'])
+                if tabel[i].show == "nee" then
+                love.graphics.setColor(1,0,0,1)
+                love.graphics.printf((string.char(tabel[i].lettercode)), 0 + (45 * i), 400, 200, "center") 
+                end  
+                love.graphics.setColor(1,1,1,1)    
+            end
+
             newgame = true
         end
 
         love.graphics.print("LEVENS: " .. levens .. "  STREAK  " .. streak,WINDOW_WIDTH - 500,0)
-    end
+
+end
 
 
     
