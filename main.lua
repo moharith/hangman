@@ -4,11 +4,6 @@ LETTER_Z = 122
 WINDOW_HEIGHT = 768
 WINDOW_WIDTH = 1024
 
-local anim8 = require 'Libraries/anim8'
-
-require("Libraries/Init")
-
-
 local ingedrukteToets = key
 
 local tabel = {}
@@ -19,17 +14,21 @@ local newgame = false
 local streak = 0
 
 
+-- 
+gFont = { 
+    ['fontGroot'] = love.graphics.newFont("alagard.ttf", 30),
+    ['fontZeerGroot'] = love.graphics.newFont("alagard.ttf", 50)
+}
+
+gSound = {
+    ['backgroundMusic'] = love.audio.newSource('Libraries/Music/Exploration.mp3', 'stream'),
+    ['Blip'] = love.audio.newSource('Libraries/Sound/Blip.wav', 'static')
+}
+
+
+
 gSound['backgroundMusic']:setLooping( true )
 gSound['backgroundMusic']:play()
-
---[[ 
-    ANIMATIE
-]]
-
-spriteSheet = love.graphics.newImage('Libraries/skelet.png')
-grid = anim8.newGrid(50,50,spriteSheet:getWidth(),spriteSheet:getHeight())
-animatie = anim8.newAnimation(grid('1-4',1 ),0.2)
-
 
 
 
@@ -69,9 +68,6 @@ function love.load()
 
 end
 
-function love.update(dt)
-    animatie:update(dt)
-end
 
 
 function love.keypressed(key, scancode)
@@ -245,13 +241,11 @@ function tekengalg()
     love.graphics.setColor(1,1,1,1)
     love.graphics.setLineWidth(10)
 
-   -- animatie:draw(spriteSheet, 400, 200)
-
     if checkscore(levens) <= 9 then
-        love.graphics.line(700,450, 900, 450) -- angle -- y lengte
+        love.graphics.line(700,500, 900, 500) -- angle -- y lengte
     end
     if checkscore(levens) <= 8 then
-        love.graphics.line(700,450, 700, 200) -- angle -- y lengte
+        love.graphics.line(700,500, 700, 200) -- angle -- y lengte
     end
     if checkscore(levens) <= 7 then
         love.graphics.line(700,200, 850, 200) -- x1 y1 x2 y2
