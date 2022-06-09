@@ -4,6 +4,8 @@ LETTER_Z = 122
 WINDOW_HEIGHT = 768
 WINDOW_WIDTH = 1024
 
+local anim8 = require 'Libraries/anim8'
+
 require("Libraries/Init")
 
 
@@ -19,6 +21,16 @@ local streak = 0
 
 gSound['backgroundMusic']:setLooping( true )
 gSound['backgroundMusic']:play()
+
+--[[ 
+    ANIMATIE
+]]
+
+spriteSheet = love.graphics.newImage('Libraries/skelet.png')
+grid = anim8.newGrid(50,50,spriteSheet:getWidth(),spriteSheet:getHeight())
+animatie = anim8.newAnimation(grid('1-4',1 ),0.2)
+
+
 
 
 function init()
@@ -57,6 +69,9 @@ function love.load()
 
 end
 
+function love.update(dt)
+    animatie:update(dt)
+end
 
 
 function love.keypressed(key, scancode)
@@ -144,6 +159,7 @@ function love.draw()
 
     woordstring() -- woord op beeld
     PrintAlfabet() -- alfebet op beeld
+    tekengalg()
 -- 
 end
 
@@ -151,16 +167,16 @@ end
 function woordstring()
     for i = 1, woordlengte do   
         love.graphics.setFont(gFont['fontGroot'])
-        love.graphics.printf((i), 0 + (45 * i), 450, 200, "center") 
+        love.graphics.printf((i), 0 + (45 * i), 600, 200, "center") 
         love.graphics.setFont(gFont['fontZeerGroot'])
 
  
         if tabel[i].show == "ja" then
             love.graphics.setColor(1,1,1,1)
 
-            love.graphics.printf((string.char(tabel[i].lettercode)), 0 + (45 * i), 400, 200, "center")
+            love.graphics.printf((string.char(tabel[i].lettercode)), 0 + (45 * i), 550, 200, "center")
         else
-            love.graphics.printf(("_"), 0 + (45 * i), 400, 200, "center")
+            love.graphics.printf(("_"), 0 + (45 * i), 550, 200, "center")
         
             -- love.graphics.setColor(0,0,0,0)
         end
@@ -170,7 +186,7 @@ function woordstring()
 end
 
 -- laat score zien
-function checkscore()
+function checkscore(levens)
     local max = woordlengte
     local levens = 10
 
@@ -189,7 +205,11 @@ function checkscore()
         if max == 0  then
 
             levens = levens + 1
-            
+            love.graphics.setFont(gFont['fontZeerGroot'])
+            love.graphics.setColor(0,1,0,1)    -- groen
+            love.graphics.printf("Gewonnen!", WINDOW_WIDTH / 3 , WINDOW_HEIGHT / 4, 300, 'center')            
+            love.graphics.setColor(1,1,1,1)  
+            love.graphics.setFont(gFont['fontGroot'])
             love.graphics.print("Druk op enter om een nieuw potje te spelen", WINDOW_WIDTH / 2 - 300 , WINDOW_HEIGHT /3)
            -- max = max -1
             wongame = true
@@ -206,7 +226,9 @@ function checkscore()
                 love.graphics.setFont(gFont['fontZeerGroot'])
                 if tabel[i].show == "nee" then
                 love.graphics.setColor(1,0,0,1)
-                love.graphics.printf((string.char(tabel[i].lettercode)), 0 + (45 * i), 400, 200, "center") 
+                love.graphics.printf((string.char(tabel[i].lettercode)), 0 + (45 * i), 550, 200, "center") 
+
+                
                 end  
                 love.graphics.setColor(1,1,1,1)    
             end
@@ -215,9 +237,26 @@ function checkscore()
         end
 
         love.graphics.print("LEVENS: " .. levens .. "  STREAK  " .. streak,WINDOW_WIDTH - 500,0)
-
+        return(levens)
 end
 
+function tekengalg()
+    love.graphics.setColor(1,1,1,1)
+   -- animatie:draw(spriteSheet, 400, 200)
+
+    if checkscore(levens) <= 9 then
+        love.graphics.setLineWidth(10)
+        love.graphics.line(700,450, 900, 450) -- angle -- y lengte
+    end
+    if checkscore(levens) <= 8 then
+        love.graphics.setLineWidth(10)
+        love.graphics.line(700,450, 700, 200) -- angle -- y lengte
+    end
+    -- if checkscore(levens) <= 7 then
+    --     love.graphics.setLineWidth(10)
+    --     love.graphics.line(700,450, 700, 350) -- angle -- y lengte
+    -- end
+end
 
     
 function kieswoord()
