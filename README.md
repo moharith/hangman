@@ -6,7 +6,7 @@ A simple hangman Project
 - Load Dutch Words from a text file into a table
 - Randomized Word selction
 - Display wrong / correct letters
-- Dusplay Word Parts
+- Display Word Parts
 - Fix: Unable to select same letters multiple times
 - Fix: Don't do anyhting when letter != a till z
 - Fix: Letters displayed Correctly
