@@ -219,9 +219,10 @@ function checkscore(levens)
 
         if levens <= 0 then
             --love.graphics.clear()
+            love.graphics.setFont(gFont['fontGroot'])
 
-            love.graphics.print("Druk op enter om een nieuw potje te spelen", WINDOW_WIDTH / 2 - 300 , WINDOW_HEIGHT /4)
-            love.graphics.print("Het woord was ... ", WINDOW_WIDTH / 2 - 300 , WINDOW_HEIGHT /3)
+            love.graphics.print("Druk op enter om een nieuw potje te spelen", WINDOW_WIDTH / 2 - 400 , WINDOW_HEIGHT /4)
+            love.graphics.print("Het woord was ... ", WINDOW_WIDTH / 2 - 400 , WINDOW_HEIGHT /3)
             for i = 1, woordlengte do   
                 love.graphics.setFont(gFont['fontZeerGroot'])
                 if tabel[i].show == "nee" then
@@ -242,20 +243,41 @@ end
 
 function tekengalg()
     love.graphics.setColor(1,1,1,1)
+    love.graphics.setLineWidth(10)
+
    -- animatie:draw(spriteSheet, 400, 200)
 
     if checkscore(levens) <= 9 then
-        love.graphics.setLineWidth(10)
         love.graphics.line(700,450, 900, 450) -- angle -- y lengte
     end
     if checkscore(levens) <= 8 then
-        love.graphics.setLineWidth(10)
         love.graphics.line(700,450, 700, 200) -- angle -- y lengte
     end
-    -- if checkscore(levens) <= 7 then
-    --     love.graphics.setLineWidth(10)
-    --     love.graphics.line(700,450, 700, 350) -- angle -- y lengte
-    -- end
+    if checkscore(levens) <= 7 then
+        love.graphics.line(700,200, 850, 200) -- x1 y1 x2 y2
+    end
+    if checkscore(levens) <= 6 then
+        love.graphics.line(850,200, 850, 250) -- x1 y1 x2 y2
+    end
+    if checkscore(levens) <= 5 then
+        love.graphics.circle("line",850, 275, 25) -- x1 y1 x2 y2
+    end
+    if checkscore(levens) <= 4 then
+        love.graphics.line(850,300, 850, 400) -- x1 y1 x2 y2
+    end
+    if checkscore(levens) <= 3 then
+        love.graphics.line(850,300, 900, 350) -- x1 y1 x2 y2
+    end
+    if checkscore(levens) <= 2 then
+        love.graphics.line(800,350, 850, 300) -- x1 y1 x2 y2
+    end
+    if checkscore(levens) <= 1 then
+        love.graphics.line(850,400, 900, 450) -- x1 y1 x2 y2
+    end
+    if checkscore(levens) <= 0 then
+        love.graphics.line(800,450, 850, 400) -- x1 y1 x2 y2
+    end
+    love.graphics.setLineWidth(1)
 end
 
     
