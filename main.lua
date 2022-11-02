@@ -218,12 +218,13 @@ function checkscore(levens)
         end
 
         if levens <= 0 then
-            --love.graphics.clear()
-
-            love.graphics.print("Druk op enter om een nieuw potje te spelen", WINDOW_WIDTH / 2 - 300 , WINDOW_HEIGHT /4)
-            love.graphics.print("Het woord was ... ", WINDOW_WIDTH / 2 - 300 , WINDOW_HEIGHT /3)
-            for i = 1, woordlengte do   
+            -- love.graphics.clear()
+            love.graphics.setFont(gFont['fontGroot'])
+                love.graphics.print("Druk op enter om een nieuw potje te spelen", WINDOW_WIDTH / 2 - 300 , WINDOW_HEIGHT /4)
+                love.graphics.print("Het woord was ... ", WINDOW_WIDTH / 2 - 300 , WINDOW_HEIGHT /3)
                 love.graphics.setFont(gFont['fontZeerGroot'])
+            for i = 1, woordlengte do   
+                
                 if tabel[i].show == "nee" then
                 love.graphics.setColor(1,0,0,1)
                 love.graphics.printf((string.char(tabel[i].lettercode)), 0 + (45 * i), 550, 200, "center") 
@@ -242,7 +243,7 @@ end
 
 function tekengalg()
     love.graphics.setColor(1,1,1,1)
-   -- animatie:draw(spriteSheet, 400, 200)
+    animatie:draw(spriteSheet, 950, 600)
 
     if checkscore(levens) <= 9 then
         love.graphics.setLineWidth(10)
