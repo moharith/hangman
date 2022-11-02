@@ -13,17 +13,17 @@ A simple hangman Project
 - Streak Counter
 - Life ( 10x per word )
 - Medieval Font
-
-# todo
-
 - Display Number of letterblocks ( maybe with numbers beneath )
-- Main menu
-- Title Screen
+- Gallows ( Skeleton animation -- skipped , got rid of anim8)
 - Audio
 - Music
 - Words displayed when Game-Over
-- Gallows + Skeleton animation
 
+
+# todo
+
+- Main menu
+- Title Screen
 
 
 ## Maybe later
