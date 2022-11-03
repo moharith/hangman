@@ -230,13 +230,6 @@ function checkscore(levens)
 
         end
 
-<<<<<<< HEAD
-        if levens <= 0 then
-            -- love.graphics.clear()
-            love.graphics.setFont(gFont['fontGroot'])
-                love.graphics.print("Druk op enter om een nieuw potje te spelen", WINDOW_WIDTH / 2 - 300 , WINDOW_HEIGHT /4)
-                love.graphics.print("Het woord was ... ", WINDOW_WIDTH / 2 - 300 , WINDOW_HEIGHT /3)
-=======
         -- if not alive then show word in red
 
         if levens <= 0 then
@@ -245,10 +238,7 @@ function checkscore(levens)
             love.graphics.print("Druk op enter om een nieuw potje te spelen", WINDOW_WIDTH / 2 - 400 , WINDOW_HEIGHT /4)
             love.graphics.print("Het woord was ... ", WINDOW_WIDTH / 2 - 400 , WINDOW_HEIGHT /3)
             for i = 1, woordlengte do   
->>>>>>> 6264a61a7ff2ab482a73ba1cc5d72bbff79f527e
                 love.graphics.setFont(gFont['fontZeerGroot'])
-            for i = 1, woordlengte do   
-                
                 if tabel[i].show == "nee" then
                 love.graphics.setColor(1,0,0,1)
                 love.graphics.printf((string.char(tabel[i].lettercode)), 0 + (45 * i), 550, 200, "center") 
@@ -270,11 +260,7 @@ end
 
 function tekengalg()
     love.graphics.setColor(1,1,1,1)
-<<<<<<< HEAD
-    animatie:draw(spriteSheet, 950, 600)
-=======
     love.graphics.setLineWidth(10)
->>>>>>> 6264a61a7ff2ab482a73ba1cc5d72bbff79f527e
 
     if checkscore(levens) <= 9 then
         love.graphics.line(700,500, 900, 500) -- angle -- y lengte
